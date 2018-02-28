@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+main {
+	min-height: 120vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("https://cdn.pixabay.com/photo/2018/01/19/09/31/kirkjufell-3092048_960_720.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.container {
+	min-height: 120vh;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.container__title {
+	color: #fff;
+	font-size: 5vh;
+	text-align: center;
+	letter-spacing: 0.3vw;
+	text-transform: capitalize;
+}
+
+.container__title h3 {
+	font-size: 4.5vh;
+}
+
+.container__clock {
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.container__time {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.container__time--text {
+	height: 7vh;
+	min-width: 12vw;
+	margin: 0 2vw;
+	padding: 1.4vh 2vw 0 2vw;
+	color: #d67fe0;
+	font-size: 3vh;
+	text-align: center;
+	text-transform: uppercase;
+	border: 0.3vh dotted #fff;
+	border-radius: 4vh;
+}
+
+.container__time p {
+	margin: 3vh 0;
+	color: #fff;
+	font-size: 11vh;
+	font-family: 'VT323', monospace;
+}
+
+.container__paragraphs {
+	color: #fff;
+	font-size: 3.2vh;
+	text-align: center;
+	letter-spacing: 0.1vw;
+}
+
+.container__paragraphs p {
+	margin: 1vh 0;
+}
+
+.container__sign-up {
+	height: 8vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.container__sign-up input {
+	width: 30%;
+	padding: 0 1vw;
+	background-color: #6b2919;
+	color: #fff;
+	font-size: 2.4vh;
+	border: none;
+}
+
+.container__sign-up input:focus {
+	outline: none;
+}
+
+::placeholder {
+	color: #fff;
+}
+
+.container__sign-up button {
+	min-width: 8%;
+	padding: 0 1vw;
+	background-color: #fff;
+	color: #6b2919;
+	font-size: 2vh;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	border-radius: 0.4vh;
+	transition: 0.3s all;
+}
+
+.container__sign-up button:hover {
+	background-color: #cc8470;
+}
+
+.container__social-media {
+	width: 30%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #6b2919;
+	font-size: 3px;
+}
+
+.container__social-media .icon {
+	height: 6vh;
+	width: 13%;
+	padding: 0.7vh 0.7vw;
+	background-color: #fff;
+	font-size: 1px;
+	cursor: pointer;
+	border: 0.4vh solid #fff;
+	border-radius: 4vh;
+	transition: 0.3s all;
+}
+
+.container__social-media .icon:hover {
+	background-color: #6b2919;
+	color: #fff;
+}
+
+.container__footer {
+	color: #fff;
+	font-size: 3vh;
+	text-align: center;
+}
+
+@media (max-width: 971px) {
+
+	.container__sign-up input {
+		width: 35%;
+	}
+
+	.container__social-media {
+		width: 35%;
+	}
+}
+
+@media (max-width: 745px) {
+
+	.container__sign-up input {
+		width: 40%;
+	}
+
+	.container__social-media {
+		width: 40%;
+	}	
+}
+
+@media (max-width: 667px) {
+
+	.container__social-media {
+		width: 45%;
+	}
+}
+
+@media (max-width: 745px) {
+
+	.container__sign-up input {
+		width: 50%;
+	}
+
+	.container__social-media {
+		width: 55%;
+	}	
+}
+
+@media (max-width: 445px) {
+
+	.container {
+		width: 90%;
+	}
+
+	.container__sign-up input {
+		width: 60%;
+	}
+
+	.container__social-media {
+		width: 65%;
+	}	
+}
+
+@media (max-width: 373px) {
+
+	main {
+		width: 110%;
+	}
+
+	.container__social-media {
+		width: 70%;
+	}
+}
+
+@media (max-width: 304px) {
+
+	main {
+		width: 130%;
+	}
+}
